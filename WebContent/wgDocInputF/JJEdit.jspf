@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="JJEdit">
+        <ui:label binding="#{wgDocInputF$JJEdit.label1}" for="txtBG" id="label1" style="left: 360px; top: 288px; position: absolute" text="为空表示无变更"/>
+        <ui:textField binding="#{wgDocInputF$JJEdit.txtTH}" id="txtTH" style="left: 96px; top: 240px; position: absolute; width: 250px" text="#{wgDocInputF$JJEdit.tblueprintjjbaseinspect.snBlueprint}"/>
+        <ui:textArea binding="#{wgDocInputF$JJEdit.txtBZ}" id="txtBZ" style="height: 50px; left: 0px; top: 360px; position: absolute; width: 350px" text="#{wgDocInputF$JJEdit.tblueprintjjbaseinspect.memo}"/>
+        <ui:textField binding="#{wgDocInputF$JJEdit.txtBG}" id="txtBG" style="left: 96px; top: 288px; position: absolute; width: 250px"/>
+        <ui:button action="#{wgDocInputF$JJEdit.button_submit_action}" binding="#{wgDocInputF$JJEdit.button_submit}" id="button_submit"
+            style="height: 32px; left: 167px; top: 432px; position: absolute; width: 80px" text="提交"/>
+        <ui:label binding="#{wgDocInputF$JJEdit.label2}" id="label2" labelLevel="1" style="left: 72px; top: 0px; position: absolute" text="基建图纸编辑"/>
+        <ui:textField binding="#{wgDocInputF$JJEdit.txtXM}" id="txtXM" style="left: 96px; top: 144px; position: absolute; width: 250px" text="#{wgDocInputF$JJEdit.tblueprintjjbaseinspect.projectName}"/>
+        <ui:textField binding="#{wgDocInputF$JJEdit.txtTZMC}" id="txtTZMC" style="left: 96px; top: 192px; position: absolute; width: 250px" text="#{wgDocInputF$JJEdit.tblueprintjjbaseinspect.blueprintName}"/>
+        <ui:textField binding="#{wgDocInputF$JJEdit.txtNMBH}" id="txtNMBH" rendered="false" style="left: 384px; top: 216px; position: absolute" text="#{wgDocInputF$JJEdit.tblueprintjjbaseinspect.categoryString}"/>
+        <ui:textField binding="#{wgDocInputF$JJEdit.txtGCMC}" id="txtGCMC" style="left: 96px; top: 96px; position: absolute; width: 250px" text="#{wgDocInputF$JJEdit.tblueprintjjbaseinspect.blueprintProject}"/>
+        <ui:messageGroup binding="#{wgDocInputF$JJEdit.messageGroup1}" id="messageGroup1" style="left: 72px; top: 504px; position: absolute"/>
+        <ui:dropDown binding="#{wgDocInputF$JJEdit.dropDown_cat}" id="dropDown_cat" items="#{wgDocInputF$JJEdit.dropDown_catDefaultOptions.options}"
+            selected="#{wgDocInputF$JJEdit.tblueprintjjbaseinspect.categoryString}" style="left: 96px; top: 48px; position: absolute; width: 250px"/>
+        <ui:staticText binding="#{wgDocInputF$JJEdit.staticText1}" id="staticText1" style="left: 0px; top: 48px; position: absolute" text="类目编号："/>
+        <ui:staticText binding="#{wgDocInputF$JJEdit.staticText2}" id="staticText2" style="left: 0px; top: 96px; position: absolute" text="工程名称："/>
+        <ui:staticText binding="#{wgDocInputF$JJEdit.staticText3}" id="staticText3" style="left: 0px; top: 144px; position: absolute" text="项目名称："/>
+        <ui:staticText binding="#{wgDocInputF$JJEdit.staticText4}" id="staticText4" style="position: absolute; left: 0px; top: 192px" text="图纸名称："/>
+        <ui:staticText binding="#{wgDocInputF$JJEdit.staticText5}" id="staticText5" style="left: 0px; top: 288px; position: absolute" text="变更编号："/>
+        <ui:staticText binding="#{wgDocInputF$JJEdit.staticText6}" id="staticText6" style="left: 0px; top: 336px; position: absolute" text="备注信息："/>
+        <ui:staticText binding="#{wgDocInputF$JJEdit.staticText7}" id="staticText7" style="left: 0px; top: 240px; position: absolute" text="图档编号："/>
+        <ui:button action="#{wgDocInputF$JJEdit.button1_action}" binding="#{wgDocInputF$JJEdit.button1}" id="button1"
+            style="height: 32px; left: 263px; top: 432px; position: absolute; width: 80px" text="退出"/>
+    </f:subview>
+</div>

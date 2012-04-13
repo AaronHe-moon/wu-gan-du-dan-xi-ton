@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="JJInspectShowAll">
+        <ui:table augmentTitle="false" binding="#{wgDocInputF$JJInspectShowAll.table1}" id="table1" paginateButton="true" paginationControls="true"
+            style="left: 0px; top: 0px; position: absolute; width: 768px" title="待审基建一览" width="576">
+            <ui:tableRowGroup binding="#{wgDocInputF$JJInspectShowAll.tableRowGroup1}" id="tableRowGroup1" rows="10"
+                sourceData="#{wgDocInputF$JJInspectShowAll.jjiObjectProvider}" sourceVar="currentRow">
+                <ui:tableColumn binding="#{wgDocInputF$JJInspectShowAll.tableColumn2}" headerText="工程名称" id="tableColumn2" valign="top">
+                    <ui:staticText binding="#{wgDocInputF$JJInspectShowAll.staticText2}" id="staticText2" text="#{currentRow.value['blueprintProject']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$JJInspectShowAll.tableColumn6}" headerText="项目名称" id="tableColumn6"  valign="top">
+                    <ui:staticText binding="#{wgDocInputF$JJInspectShowAll.staticText5}" id="staticText5" text="#{currentRow.value['projectName']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$JJInspectShowAll.tableColumn1}" headerText="图档名称" id="tableColumn1"  valign="top">
+                    <ui:staticText binding="#{wgDocInputF$JJInspectShowAll.staticText1}" id="staticText1" text="#{currentRow.value['blueprintName']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$JJInspectShowAll.tableColumn7}" headerText="图档编号" id="tableColumn7"  valign="top">
+                    <ui:staticText binding="#{wgDocInputF$JJInspectShowAll.staticText6}" id="staticText6" text="#{currentRow.value['snBlueprint']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$JJInspectShowAll.tableColumn3}" headerText="类目编号" id="tableColumn3"  valign="top">
+                    <ui:staticText binding="#{wgDocInputF$JJInspectShowAll.staticText3}" id="staticText3" text="#{currentRow.value['categoryString']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$JJInspectShowAll.tableColumn5}" headerText="备注信息" id="tableColumn5"  valign="top">
+                    <ui:staticText binding="#{wgDocInputF$JJInspectShowAll.staticText4}" id="staticText4" text="#{currentRow.value['memo']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$JJInspectShowAll.tableColumn9}" headerText="查看" id="tableColumn9" valign="top" visible="false">
+                    <ui:hyperlink action="#{wgDocInputF$JJInspectShowAll.hyperlink_view_action}" binding="#{wgDocInputF$JJInspectShowAll.hyperlink_view}"
+                        id="hyperlink_view" text="查看图档"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$JJInspectShowAll.tableColumn4}" headerText="审核图档" id="tableColumn4" valign="top">
+                    <ui:hyperlink action="#{wgDocInputF$JJInspectShowAll.hyperlink_inspectJJDoc_action}"
+                        binding="#{wgDocInputF$JJInspectShowAll.hyperlink_inspectJJDoc}" id="hyperlink_inspectJJDoc" text="审核"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$JJInspectShowAll.tableColumn8}" headerText="修改图档" id="tableColumn8" valign="top">
+                    <ui:hyperlink action="#{wgDocInputF$JJInspectShowAll.hyperlink_modify_action}" binding="#{wgDocInputF$JJInspectShowAll.hyperlink_modify}"
+                        id="hyperlink_modify" text="修改"/>
+                </ui:tableColumn>
+            </ui:tableRowGroup>
+        </ui:table>
+        <ui:messageGroup binding="#{wgDocInputF$JJInspectShowAll.messageGroup1}" id="messageGroup1" style="left: 96px; top: 352px; position: absolute"/>
+    </f:subview>
+</div>

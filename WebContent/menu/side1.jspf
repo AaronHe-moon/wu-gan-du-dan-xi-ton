@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="side1">
+        <ui:panelLayout binding="#{menu$side1.layoutPanel1}" id="layoutPanel1" style="background-color: rgb(211, 224, 235); color: purple; height: 278px; left: 0px; top: 0px; position: absolute; width: 134px; -rave-layout: grid">
+            <ui:hyperlink binding="#{menu$side1.hyperlink1}" id="hyperlink1" style="left: 57px; top: 33px; position: absolute" text="查看一级类目"/>
+            <ui:hyperlink binding="#{menu$side1.hyperlink2}" id="hyperlink2" style="left: 56px; top: 136px; position: absolute" text="增加一级类目"/>
+            <ui:hyperlink binding="#{menu$side1.hyperlink3}" id="hyperlink3" style="left: 56px; top: 80px; position: absolute" text="查看二级类目"/>
+            <ui:hyperlink binding="#{menu$side1.hyperlink4}" id="hyperlink4" style="left: 56px; top: 192px; position: absolute" text="增加二级类目"/>
+        </ui:panelLayout>
+    </f:subview>
+</div>

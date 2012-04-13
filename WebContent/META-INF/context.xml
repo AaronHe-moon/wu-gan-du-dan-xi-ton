@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/wgImgDoc">
+  <Resource auth="Container" driverClassName="net.sourceforge.jtds.jdbc.Driver" maxActive="20" maxIdle="10" maxWait="-1" name="jdbc/dataSource" password="wustcg" type="javax.sql.DataSource" url="jdbc:jtds:sqlserver://localhost:1433/wgDoc" username="sa"/>
+  <Resource auth="Container" driverClassName="net.sourceforge.jtds.jdbc.Driver" maxActive="20" maxIdle="10" maxWait="-1" name="jdbc/dataSource_1189484633656" password="sa" type="javax.sql.DataSource" url="jdbc:jtds:sqlserver://localhost:1433/wgDoc" username="sa"/>
+  <ResourceLink global="jdbc/dataSource5" name="jdbc/dataSource5" type="javax.sql.DataSource"/>
+  <ResourceLink global="jdbc/dataSource3_1188181982406" name="jdbc/dataSource3_1188181982406" type="javax.sql.DataSource"/>
+  <ResourceLink global="jdbc/dataSource_11894846336563_1188181982406" name="jdbc/dataSource_11894846336563_1188181982406" type="javax.sql.DataSource"/>
+</Context>

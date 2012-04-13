@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+    <!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+    
+    <class 
+        name="entity.TBlueprintInspect" 
+        table="t_blueprint_inspect"
+        lazy="false"
+    >
+        
+        <id
+            name="idBlueprint"
+            type="java.lang.Integer"
+            column="ID_blueprint"
+        >
+            
+            <generator class="native" />
+        </id>
+        
+        <property
+            name="snBlueprint"
+            type="java.lang.String"
+            column="SN_blueprint"
+            length="50"
+        />
+        <property
+            name="bigImage"
+            type="java.sql.Blob"
+            column="BigImage"
+            length="2147483647"
+            lazy="true"
+        />
+        <property
+            name="bigDoc"
+            type="java.sql.Clob"
+            column="BigDoc"
+            length="1073741823"
+            lazy="true"
+        />
+        <property
+            name="docType"
+            type="java.lang.String"
+            column="DocType"
+            length="50"
+        />
+        
+        <!-- Associations -->
+  
+        <!-- bi-directional one-to-one association to TBlueprintJjbaseInspect -->
+        <one-to-one name="TBlueprintJjbaseInspect"
+                    class="entity.TBlueprintJjbaseInspect" outer-join="auto"
+                    cascade="all" />
+        <!-- bi-directional one-to-one association to TBlueprintDeviceInspect -->
+        <one-to-one name="TBlueprintDeviceInspect"
+                    class="entity.TBlueprintDeviceInspect" outer-join="auto"
+                    cascade="all" />
+        
+    </class>
+</hibernate-mapping>

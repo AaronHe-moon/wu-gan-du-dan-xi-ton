@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="height: 280px; width: 136px; -rave-layout: grid" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="side4">
+        <ui:panelLayout binding="#{menu$side4.layoutPanel1}" id="layoutPanel1" style="background-color: rgb(211, 224, 235); color: purple; height: 278px; width: 134px; -rave-layout: grid">
+            <ui:hyperlink binding="#{menu$side4.hyperlink1}" id="hyperlink1" style="left: 64px; top: 24px; position: absolute" text="建立角色"/>
+            <ui:hyperlink binding="#{menu$side4.hyperlink2}" id="hyperlink2" style="left: 64px; top: 120px; position: absolute" text="建立帐号"/>
+            <ui:hyperlink binding="#{menu$side4.hyperlink3}" id="hyperlink3" style="left: 64px; top: 72px; position: absolute" text="修改角色"/>
+            <ui:hyperlink binding="#{menu$side4.hyperlink4}" id="hyperlink4" style="left: 64px; top: 176px; position: absolute" text="修改帐号"/>
+            <ui:hyperlink binding="#{menu$side4.hyperlink5}" id="hyperlink5" style="left: 64px; top: 232px; position: absolute" text="搜索帐号"/>
+        </ui:panelLayout>
+    </f:subview>
+</div>

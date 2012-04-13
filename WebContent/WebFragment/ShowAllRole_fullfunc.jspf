@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="ShowAllRole_fullfunc">
+        <ui:label binding="#{WebFragment$ShowAllRole_fullfunc.label1}" id="label1" labelLevel="1"
+            style="height: 24px; left: 192px; top: 0px; position: absolute; width: 70px" text="所有角色"/>
+        <ui:table augmentTitle="false" binding="#{WebFragment$ShowAllRole_fullfunc.table_AllRole}" id="table_AllRole"
+            style="left: 0px; top: 48px; position: absolute; width: 360px" title="用户角色一览" width="360">
+            <ui:tableRowGroup binding="#{WebFragment$ShowAllRole_fullfunc.tableRowGroup1}" id="tableRowGroup1" rows="10"
+                sourceData="#{WebFragment$ShowAllRole_fullfunc.troleDataProvider}" sourceVar="currentRow">
+                <ui:tableColumn binding="#{WebFragment$ShowAllRole_fullfunc.tableColumn1}" headerText="角色名称" id="tableColumn1" sort="roleName" valign="top">
+                    <ui:staticText binding="#{WebFragment$ShowAllRole_fullfunc.staticText1}" id="staticText1" text="#{currentRow.value['roleName']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{WebFragment$ShowAllRole_fullfunc.tableColumn2}" headerText="备注信息" id="tableColumn2" sort="memo" valign="top">
+                    <ui:staticText binding="#{WebFragment$ShowAllRole_fullfunc.staticText2}" id="staticText2" text="#{currentRow.value['memo']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{WebFragment$ShowAllRole_fullfunc.tableColumn3}" headerText="修改角色" id="tableColumn3" valign="top">
+                    <ui:hyperlink action="#{WebFragment$ShowAllRole_fullfunc.hyperlink_modifyRole_action}"
+                        binding="#{WebFragment$ShowAllRole_fullfunc.hyperlink_modifyRole}" id="hyperlink_modifyRole" text="修改"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{WebFragment$ShowAllRole_fullfunc.tableColumn5}" headerText="删除" id="tableColumn5" valign="top">
+                    <ui:hyperlink action="#{WebFragment$ShowAllRole_fullfunc.hyperlink_deleteRole_action}"
+                        binding="#{WebFragment$ShowAllRole_fullfunc.hyperlink_deleteRole}" id="hyperlink_deleteRole" text="删除"/>
+                </ui:tableColumn>
+            </ui:tableRowGroup>
+        </ui:table>
+        <ui:messageGroup binding="#{WebFragment$ShowAllRole_fullfunc.messageGroup1}" id="messageGroup1" style="left: 528px; top: 96px; position: absolute"/>
+    </f:subview>
+</div>

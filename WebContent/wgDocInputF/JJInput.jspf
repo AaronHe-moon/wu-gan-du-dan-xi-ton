@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="JJInput">
+        <ui:label binding="#{wgDocInputF$JJInput.label2}" id="label2" labelLevel="1" style="left: 72px; top: 0px; position: absolute" text="基建图档输入"/>
+        <ui:textField binding="#{wgDocInputF$JJInput.txtXM}" id="txtXM" style="left: 96px; top: 144px; position: absolute; width: 250px"/>
+        <ui:textField binding="#{wgDocInputF$JJInput.txtLink}" id="txtLink" style="left: 96px; top: 336px; position: absolute; width: 250px"/>
+        <ui:textField binding="#{wgDocInputF$JJInput.txtBH}" id="txtBH" style="left: 96px; top: 240px; position: absolute; width: 250px"/>
+        <ui:textField binding="#{wgDocInputF$JJInput.txtGC}" id="txtGC" style="left: 96px; top: 96px; position: absolute; width: 250px"/>
+        <ui:button action="#{wgDocInputF$JJInput.button_submit_action}" binding="#{wgDocInputF$JJInput.button_submit}" id="button_submit"
+            style="height: 32px; left: 215px; top: 480px; position: absolute; width: 80px" text="确定"/>
+        <ui:textField binding="#{wgDocInputF$JJInput.txtTZMC}" id="txtTZMC" style="left: 96px; top: 192px; position: absolute; width: 250px"/>
+        <ui:label binding="#{wgDocInputF$JJInput.label1}" for="fileUp" id="label1" style="left: 0px; top: 288px; position: absolute" text="选择上传文件："/>
+        <ui:textArea binding="#{wgDocInputF$JJInput.txtMemo}" id="txtMemo" style="height: 50px; left: 0px; top: 408px; position: absolute; width: 400px"/>
+        <ui:label binding="#{wgDocInputF$JJInput.label3}" for="txtLink" id="label3" style="left: 360px; top: 336px; position: absolute" text="为空表示无变更"/>
+        <ui:upload binding="#{wgDocInputF$JJInput.fileUp}" id="fileUp" onChange="" style="left: 96px; top: 288px; position: absolute; width: 350px"/>
+        <ui:label binding="#{wgDocInputF$JJInput.label4}" id="label4" style="position: absolute; left: 0px; top: 48px" text="类目编号："/>
+        <ui:label binding="#{wgDocInputF$JJInput.label5}" id="label5" style="left: 0px; top: 96px; position: absolute" text="工程名称："/>
+        <ui:label binding="#{wgDocInputF$JJInput.label6}" id="label6" style="left: 0px; top: 144px; position: absolute" text="项目名称："/>
+        <ui:label binding="#{wgDocInputF$JJInput.label7}" id="label7" style="left: 0px; top: 192px; position: absolute" text="图纸名称："/>
+        <ui:label binding="#{wgDocInputF$JJInput.label8}" id="label8" style="left: 0px; top: 240px; position: absolute" text="图档编号："/>
+        <ui:label binding="#{wgDocInputF$JJInput.label9}" id="label9" style="left: 0px; top: 336px; position: absolute" text="变更编号："/>
+        <ui:label binding="#{wgDocInputF$JJInput.label10}" id="label10" style="left: 0px; top: 384px; position: absolute" text="备注信息："/>
+        <ui:messageGroup binding="#{wgDocInputF$JJInput.messageGroup1}" id="messageGroup1" style="position: absolute; left: 528px; top: 48px"/>
+        <ui:dropDown binding="#{wgDocInputF$JJInput.dropDown_cat}" id="dropDown_cat" items="#{wgDocInputF$JJInput.dropDown_catDefaultOptions.options}"
+            selected="#{wgDocInputF$JJInput.dropDown_catDefaultOptions.selectedValue}" style="height: 25px; left: 96px; top: 48px; position: absolute; width: 250px"/>
+        <ui:button action="#{wgDocInputF$JJInput.button1_action}" binding="#{wgDocInputF$JJInput.button1}" id="button1"
+            style="height: 32px; left: 311px; top: 480px; position: absolute; width: 80px" text="退出"/>
+    </f:subview>
+</div>

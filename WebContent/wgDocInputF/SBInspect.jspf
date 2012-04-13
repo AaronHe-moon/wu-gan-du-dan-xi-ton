@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="SBInspect">
+        <ui:panelLayout binding="#{wgDocInputF$SBInspect.layoutPanel1}" id="layoutPanel1" panelLayout="flow" style="border-width: 1px; border-style: solid; height: 450px; text-align: center; width: 600px">
+            <ui:image binding="#{wgDocInputF$SBInspect.image_toBeShown}" height="450" id="image_toBeShown" width="600"/>
+        </ui:panelLayout>
+        <ui:button action="#{wgDocInputF$SBInspect.button_nopass1_action}" binding="#{wgDocInputF$SBInspect.button_nopass1}" id="button_nopass1"
+            style="height: 32px; left: 623px; top: 384px; position: absolute; width: 80px" text="不通过"/>
+        <ui:label binding="#{wgDocInputF$SBInspect.label1}" id="label1" style="left: 624px; top: 192px; position: absolute" text="审批意见："/>
+        <ui:button action="#{wgDocInputF$SBInspect.button_pass_action}" binding="#{wgDocInputF$SBInspect.button_pass1}" id="button_pass1"
+            style="height: 32px; left: 623px; top: 336px; position: absolute; width: 80px" text="通过"/>
+        <ui:textArea binding="#{wgDocInputF$SBInspect.textArea_spNotes}" id="textArea_spNotes" style="height: 88px; left: 624px; top: 216px; position: absolute; width: 120px"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.staticText1}" id="staticText1" style="left: 624px; top: 24px; position: absolute" text="设备型号:"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.staticText2}" id="staticText2" style="left: 624px; top: 48px; position: absolute" text="部件名称:"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.staticText3}" id="staticText3" style="left: 624px; top: 72px; position: absolute" text="类目编号:"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.staticText4}" id="staticText4" style="left: 624px; top: 120px; position: absolute" text="图档编号:"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.staticText5}" id="staticText5" style="left: 624px; top: 144px; position: absolute" text="变更编号:"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.staticText6}" id="staticText6" style="left: 624px; top: 168px; position: absolute" text="备注信息:"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.txtSBMC}" id="txtSBMC" style="left: 696px; top: 24px; position: absolute"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.txtBJMC}" id="txtBJMC" style="left: 696px; top: 48px; position: absolute"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.txtNMBH}" id="txtNMBH" style="left: 696px; top: 72px; position: absolute"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.txtTDBH}" id="txtTDBH" style="left: 696px; top: 120px; position: absolute"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.txtBG}" id="txtBG" style="left: 696px; top: 144px; position: absolute"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.txtBZ}" id="txtBZ" style="left: 696px; top: 168px; position: absolute"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.staticText7}" id="staticText7" style="left: 624px; top: 96px; position: absolute" text="图档名称:"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.txtTZMC}" id="txtTZMC" style="left: 696px; top: 96px; position: absolute"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.staticText8}" id="staticText8" style="left: 624px; top: 0px; position: absolute" text="设备名称:"/>
+        <ui:staticText binding="#{wgDocInputF$SBInspect.txtSBAliasName}" id="txtSBAliasName" style="left: 696px; top: 0px; position: absolute"/>
+    </f:subview>
+</div>

@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+    <!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+    
+    <class 
+        name="entity.TBlueprintJjbase" 
+        table="t_blueprint_jjbase"
+        lazy="false"
+    >
+        
+        <id
+            name="idBlueprint"
+            type="java.lang.Integer"
+            column="ID_blueprint"
+        >
+            
+            <generator class="foreign" >
+            <param name="property">TBlueprint</param></generator>
+        </id>
+        
+        <property
+            name="snBlueprint"
+            type="java.lang.String"
+            column="SN_blueprint"
+            length="50"
+        />
+        <property
+            name="blueprintName"
+            type="java.lang.String"
+            column="blueprintName"
+            length="250"
+        />
+        <property
+            name="blueprintProject"
+            type="java.lang.String"
+            column="Blueprint_Project"
+            length="250"
+        />
+        <property
+            name="projectName"
+            type="java.lang.String"
+            column="ProjectName"
+            length="250"
+        />
+        <property
+            name="categoryString"
+            type="java.lang.String"
+            column="CategoryString"
+            length="50"
+        />
+        <property
+            name="smallImage"
+            type="java.sql.Blob"
+            column="SmallImage"
+            length="2147483647"
+            lazy="true"
+        />
+        <property
+            name="memo"
+            type="java.lang.String"
+            column="Memo"
+            length="500"
+        />
+        
+        <!-- Associations -->
+  
+        <!-- bi-directional one-to-one association to TBlueprint -->
+        <one-to-one
+            name="TBlueprint"
+            class="entity.TBlueprint"
+            outer-join="auto"
+            constrained="true"
+        />
+        <!-- bi-directional one-to-many association to TBlueprintJjbase -->
+
+        <set
+            name="TBlueprintJjbases"
+            lazy="true"
+            inverse="true"
+            cascade="all"
+            
+        >
+            <key>
+                <column name="Linked_blueprint" />
+            </key>
+            
+            <one-to-many 
+                class="entity.TBlueprintJjbase"
+            />
+        </set>
+        <!-- bi-directional many-to-one association to TBlueprintJjbase -->
+        <many-to-one
+            name="TBlueprintJjbase"
+            class="entity.TBlueprintJjbase"
+            not-null="true"
+        >
+            <column name="Linked_blueprint" />
+        </many-to-one>
+        
+    </class>
+</hibernate-mapping>

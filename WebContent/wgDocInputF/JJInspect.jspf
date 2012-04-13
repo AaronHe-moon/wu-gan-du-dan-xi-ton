@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="JJInspect">
+        <ui:textArea binding="#{wgDocInputF$JJInspect.textArea_spNotes}" id="textArea_spNotes" style="height: 72px; left: 616px; top: 216px; position: absolute; width: 144px"/>
+        <ui:label binding="#{wgDocInputF$JJInspect.label3}" id="label3" style="left: 616px; top: 192px; position: absolute" text="审批意见："/>
+        <ui:panelLayout binding="#{wgDocInputF$JJInspect.layoutPanel1}" id="layoutPanel1" panelLayout="flow" style="border-width: 1px; border-style: solid; height: 450px; left: 0px; top: 0px; position: absolute; width: 600px">
+            <ui:image binding="#{wgDocInputF$JJInspect.image_toBeShown}" height="450" id="image_toBeShown" width="600"/>
+        </ui:panelLayout>
+        <ui:button action="#{wgDocInputF$JJInspect.button_pass_action}" binding="#{wgDocInputF$JJInspect.button_pass}" id="button_pass"
+            style="height: 32px; left: 623px; top: 312px; position: absolute; width: 80px" text="通过"/>
+        <ui:button action="#{wgDocInputF$JJInspect.button_nopass_action}" binding="#{wgDocInputF$JJInspect.button_nopass}" id="button_nopass"
+            style="height: 32px; left: 623px; top: 360px; position: absolute; width: 80px" text="不通过"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.staticText1}" id="staticText1" style="left: 616px; top: 8px; position: absolute" text="类目编号:"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.staticText2}" id="staticText2" style="left: 616px; top: 32px; position: absolute" text="工程名称:"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.staticText3}" id="staticText3" style="left: 616px; top: 56px; position: absolute" text="项目名称:"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.staticText4}" id="staticText4" style="left: 616px; top: 80px; position: absolute" text="图纸名称:"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.staticText5}" id="staticText5" style="left: 616px; top: 104px; position: absolute" text="图档编号:"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.staticText6}" id="staticText6" style="left: 616px; top: 128px; position: absolute" text="变更编号:"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.staticText7}" id="staticText7" style="left: 616px; top: 152px; position: absolute" text="备注信息:"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.txtNM}" id="txtNM" style="left: 688px; top: 8px; position: absolute"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.txtGC}" id="txtGC" style="left: 688px; top: 32px; position: absolute"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.txtXM}" id="txtXM" style="left: 688px; top: 56px; position: absolute"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.txtTZMC}" id="txtTZMC" style="left: 688px; top: 80px; position: absolute"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.txtTH}" id="txtTH" style="left: 688px; top: 104px; position: absolute"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.txtBG}" id="txtBG" style="left: 688px; top: 128px; position: absolute"/>
+        <ui:staticText binding="#{wgDocInputF$JJInspect.txtBZ}" id="txtBZ" style="left: 688px; top: 152px; position: absolute"/>
+    </f:subview>
+</div>

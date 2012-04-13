@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="entity.TBlueprintDeviceInspect" 
+    table="t_blueprint_device_inspect"
+    lazy="false"
+>
+
+    <id
+        name="idBlueprint"
+        type="java.lang.Integer"
+        column="ID_blueprint"
+    >
+    
+        <generator class="foreign" >
+        	<param name="property">TBlueprintInspect</param></generator>
+    </id>
+
+    <property
+        name="deviceAliasName"
+        type="java.lang.String"
+        column="DeviceAliasName"
+        length="250"
+    />
+
+    <property
+        name="partName"
+        type="java.lang.String"
+        column="PartName"
+        length="250"
+    />
+    <property
+        name="deviceCode"
+        type="java.lang.String"
+        column="DeviceCode"
+        length="250"
+    />
+    <property
+        name="snBlueprint"
+        type="java.lang.String"
+        column="SN_blueprint"
+        length="50"
+    />
+    <property
+        name="categoryString"
+        type="java.lang.String"
+        column="CategoryString"
+        length="50"
+    />
+    <property
+        name="smallImage"
+        type="java.sql.Blob"
+        column="SmallImage"
+        length="2147483647"
+        lazy="true"
+    />
+    <property
+        name="isChecked"
+        type="java.lang.Boolean"
+        column="IsChecked"
+        length="1"
+    />
+    <property
+        name="spNotes"
+        type="java.lang.String"
+        column="SpNotes"
+        length="1024"
+    />
+    <property
+        name="memo"
+        type="java.lang.String"
+        column="Memo"
+        length="500"
+    />
+        <property
+            name="blueprintName"
+            type="java.lang.String"
+            column="blueprintName"
+            length="250"
+        />
+    <!-- Associations -->
+  
+    <!-- bi-directional one-to-one association to TBlueprintInspect -->
+    <one-to-one
+        name="TBlueprintInspect"
+        class="entity.TBlueprintInspect"
+        outer-join="auto"
+        constrained="true"
+    />
+    <!-- bi-directional one-to-many association to TBlueprintDeviceInspect -->
+
+    <set
+        name="TBlueprintDeviceInspects"
+        lazy="true"
+        inverse="true"
+		cascade="all"
+
+    >
+        <key>
+            <column name="Linked_blueprint" />
+        </key>
+        
+        <one-to-many 
+            class="entity.TBlueprintDeviceInspect"
+        />
+    </set>
+    <!-- bi-directional many-to-one association to TBlueprintDeviceInspect -->
+    <many-to-one
+        name="TBlueprintDeviceInspect"
+        class="entity.TBlueprintDeviceInspect"
+        not-null="true"
+    >
+        <column name="Linked_blueprint" />
+    </many-to-one>
+
+</class>
+</hibernate-mapping>

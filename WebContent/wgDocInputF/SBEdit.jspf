@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="SBEdit">
+        <ui:textField binding="#{wgDocInputF$SBEdit.txtSBMC}" id="txtSBMC" style="left: 96px; top: 96px; position: absolute; width: 250px"/>
+        <ui:label binding="#{wgDocInputF$SBEdit.label1}" for="txtLink" id="label1" style="left: 360px; top: 336px; position: absolute" text="为空表示无变更"/>
+        <ui:textField binding="#{wgDocInputF$SBEdit.txtTH}" id="txtTH" style="left: 96px; top: 288px; position: absolute; width: 250px"/>
+        <ui:textField binding="#{wgDocInputF$SBEdit.txtBJMC}" id="txtBJMC" style="left: 96px; top: 144px; position: absolute; width: 250px"/>
+        <ui:textField binding="#{wgDocInputF$SBEdit.txtNMBH}" id="txtNMBH" rendered="false" style="left: 96px; top: 144px; position: absolute"/>
+        <ui:textArea binding="#{wgDocInputF$SBEdit.txtBZ}" id="txtBZ" style="height: 50px; left: 0px; top: 408px; position: absolute; width: 350px"/>
+        <ui:textField binding="#{wgDocInputF$SBEdit.txtLink}" id="txtLink" style="left: 96px; top: 336px; position: absolute; width: 250px"/>
+        <ui:button action="#{wgDocInputF$SBEdit.button_submit_action}" binding="#{wgDocInputF$SBEdit.button_submit}" id="button_submit"
+            style="height: 32px; left: 167px; top: 480px; position: absolute; width: 80px" text="确定"/>
+        <ui:label binding="#{wgDocInputF$SBEdit.label2}" id="label2" labelLevel="1" style="left: 72px; top: 0px; position: absolute" text="设备图档编辑"/>
+        <ui:dropDown binding="#{wgDocInputF$SBEdit.dropDown_nm}" id="dropDown_nm" items="#{wgDocInputF$SBEdit.dropDown_nmDefaultOptions.options}" style="left: 96px; top: 192px; position: absolute; width: 250px"/>
+        <ui:staticText binding="#{wgDocInputF$SBEdit.staticText1}" id="staticText1" style="left: 0px; top: 96px; position: absolute" text="设备型号(代号)："/>
+        <ui:staticText binding="#{wgDocInputF$SBEdit.staticText2}" id="staticText2" style="left: 0px; top: 144px; position: absolute" text="部件名称："/>
+        <ui:staticText binding="#{wgDocInputF$SBEdit.staticText3}" id="staticText3" style="left: 0px; top: 192px; position: absolute" text="类目编号："/>
+        <ui:staticText binding="#{wgDocInputF$SBEdit.staticText4}" id="staticText4" style="left: 0px; top: 288px; position: absolute" text="图档编号："/>
+        <ui:staticText binding="#{wgDocInputF$SBEdit.staticText5}" id="staticText5" style="left: 0px; top: 336px; position: absolute" text="变更编号："/>
+        <ui:staticText binding="#{wgDocInputF$SBEdit.staticText6}" id="staticText6" style="left: 0px; top: 384px; position: absolute" text="备注信息："/>
+        <ui:label binding="#{wgDocInputF$SBEdit.label3}" id="label3" style="left: 0px; top: 240px; position: absolute" text="图档名称："/>
+        <ui:textField binding="#{wgDocInputF$SBEdit.textField_tzmc}" id="textField_tzmc" style="left: 96px; top: 240px; position: absolute; width: 248px"/>
+        <ui:button action="#{wgDocInputF$SBEdit.button1_action}" binding="#{wgDocInputF$SBEdit.button1}" id="button1"
+            style="height: 32px; left: 263px; top: 480px; position: absolute; width: 80px" text="退出"/>
+        <ui:staticText binding="#{wgDocInputF$SBEdit.staticText7}" id="staticText7" style="left: 0px; top: 48px; position: absolute" text="设备名称："/>
+        <ui:textField binding="#{wgDocInputF$SBEdit.textField_sbAliasName}" id="textField_sbAliasName" style="left: 96px; top: 48px; position: absolute; width: 250px"/>
+    </f:subview>
+</div>

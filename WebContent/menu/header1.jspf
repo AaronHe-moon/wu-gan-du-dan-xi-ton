@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="height: 104px; width: 400px; -rave-layout: grid" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="header1">
+        <ui:panelLayout binding="#{menu$header1.layoutPanel1}" id="layoutPanel1" style="background-color: #d3e0eb; font-family: 'Courier New',Courier,monospace; height: 94px; left: 0px; top: 0px; position: absolute; vertical-align: bottom; width: 846px; -rave-layout: grid">
+            <ui:tabSet binding="#{menu$header1.tabSet1}" id="tabSet1" selected="tab2" style="background-color: rgb(211, 224, 235); left: 192px; top: 32px; position: absolute; width: 597px">
+                <ui:tab binding="#{menu$header1.tab1}" id="tab1" text="首页"/>
+                <ui:tab binding="#{menu$header1.tab2}" id="tab2" text="图档检索"/>
+                <ui:tab binding="#{menu$header1.tab3}" id="tab3" text="类目管理"/>
+                <ui:tab binding="#{menu$header1.tab4}" id="tab4" text="图档输入"/>
+                <ui:tab binding="#{menu$header1.tab5}" id="tab5" text="图档审查"/>
+                <ui:tab binding="#{menu$header1.tab6}" id="tab6" text="用户管理"/>
+            </ui:tabSet>
+            <ui:label binding="#{menu$header1.label1}" id="label1" labelLevel="1"
+                style="background-color: rgb(211, 224, 235); left: 64px; top: 24px; position: absolute" text="图档管理系统"/>
+        </ui:panelLayout>
+    </f:subview>
+</div>

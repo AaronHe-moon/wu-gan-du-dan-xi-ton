@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="entity.TPopedom" 
+    table="t_popedom"
+    lazy="false"
+>
+
+    <id
+        name="popedomName"
+        type="java.lang.String"
+        column="PopedomName"
+    >
+    
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="memo"
+        type="java.lang.String"
+        column="Memo"
+        length="500"
+    />
+    <property
+        name="action"
+        type="java.lang.String"
+        column="Action"
+        length="50"
+    />
+
+    <!-- Associations -->
+  
+    <!-- bi-directional one-to-many association to TRolePopedom -->
+
+    <set
+        name="TRolePopedoms"
+        lazy="false"
+        inverse="true"
+		cascade="all"
+
+    >
+        <key>
+            <column name="PopedomName" />
+        </key>
+        
+        <one-to-many 
+            class="entity.TRolePopedom"
+        />
+    </set>
+    <!-- bi-directional one-to-one association to TPopedomPage -->
+    <one-to-one name="TPopedomPage" class="entity.TPopedomPage"
+    	outer-join="auto" lazy="false"/>
+
+</class>
+</hibernate-mapping>

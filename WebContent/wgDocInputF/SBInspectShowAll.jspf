@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="SBInspectShowAll">
+        <ui:table augmentTitle="false" binding="#{wgDocInputF$SBInspectShowAll.table1}" id="table1" style="left: 0px; top: 0px; position: absolute"
+            title="设备待审图纸一览" width="567">
+            <ui:tableRowGroup binding="#{wgDocInputF$SBInspectShowAll.tableRowGroup1}" id="tableRowGroup1" rows="10"
+                sourceData="#{wgDocInputF$SBInspectShowAll.inspectdeviceDataProvider}" sourceVar="currentRow">
+                <ui:tableColumn binding="#{wgDocInputF$SBInspectShowAll.tableColumn10}" headerText="设备名称" id="tableColumn10" sort="deviceAliasName">
+                    <ui:staticText binding="#{wgDocInputF$SBInspectShowAll.staticText7}" id="staticText7" text="#{currentRow.value['deviceAliasName']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$SBInspectShowAll.tableColumn1}" headerText="设备型号（代号）" id="tableColumn1" sort="deviceCode" valign="top">
+                    <ui:staticText binding="#{wgDocInputF$SBInspectShowAll.staticText1}" id="staticText1" text="#{currentRow.value['deviceCode']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$SBInspectShowAll.tableColumn2}" headerText="部件名称" id="tableColumn2" valign="top">
+                    <ui:staticText binding="#{wgDocInputF$SBInspectShowAll.staticText2}" id="staticText2" text="#{currentRow.value['partName']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$SBInspectShowAll.tableColumn9}" headerText="图档名称" id="tableColumn9" valign="top">
+                    <ui:staticText binding="#{wgDocInputF$SBInspectShowAll.staticText6}" id="staticText6" text="#{currentRow.value['blueprintName']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$SBInspectShowAll.tableColumn3}" headerText="图档编号" id="tableColumn3" valign="top">
+                    <ui:staticText binding="#{wgDocInputF$SBInspectShowAll.staticText3}" id="staticText3" text="#{currentRow.value['snBlueprint']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$SBInspectShowAll.tableColumn4}" headerText="类目编号" id="tableColumn4" valign="top">
+                    <ui:staticText binding="#{wgDocInputF$SBInspectShowAll.staticText4}" id="staticText4" text="#{currentRow.value['categoryString']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$SBInspectShowAll.tableColumn5}" headerText="备注信息" id="tableColumn5" valign="top">
+                    <ui:staticText binding="#{wgDocInputF$SBInspectShowAll.staticText5}" id="staticText5" text="#{currentRow.value['memo']}"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$SBInspectShowAll.tableColumn6}" headerText="查看" id="tableColumn6" valign="top" visible="false">
+                    <ui:hyperlink action="#{wgDocInputF$SBInspectShowAll.hyperlink_view_action}" binding="#{wgDocInputF$SBInspectShowAll.hyperlink_view}"
+                        id="hyperlink_view" text="查看图档"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$SBInspectShowAll.tableColumn7}" headerText="审核图档" id="tableColumn7" valign="top">
+                    <ui:hyperlink action="#{wgDocInputF$SBInspectShowAll.hyperlink_inspectSBDoc_action}"
+                        binding="#{wgDocInputF$SBInspectShowAll.hyperlink_inspectSBDoc}" id="hyperlink_inspectSBDoc" text="审核"/>
+                </ui:tableColumn>
+                <ui:tableColumn binding="#{wgDocInputF$SBInspectShowAll.tableColumn8}" headerText="修改图档" id="tableColumn8" valign="top">
+                    <ui:hyperlink action="#{wgDocInputF$SBInspectShowAll.hyperlink_modify_action}" binding="#{wgDocInputF$SBInspectShowAll.hyperlink_modify}"
+                        id="hyperlink_modify" text="修改"/>
+                </ui:tableColumn>
+            </ui:tableRowGroup>
+        </ui:table>
+        <ui:messageGroup binding="#{wgDocInputF$SBInspectShowAll.messageGroup1}" id="messageGroup1" style="position: absolute; left: 208px; top: 296px"/>
+    </f:subview>
+</div>

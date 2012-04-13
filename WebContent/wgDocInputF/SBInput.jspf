@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="SBInput">
+        <ui:upload binding="#{wgDocInputF$SBInput.fileUpload}" id="fileUpload" onChange="" style="left: 96px; top: 336px; position: absolute; width: 350px"/>
+        <ui:textField binding="#{wgDocInputF$SBInput.textField_deviceCode}" id="textField_deviceCode" style="left: 96px; top: 96px; position: absolute; width: 250px"/>
+        <ui:label binding="#{wgDocInputF$SBInput.label1}" for="textField_link" id="label1" style="left: 360px; top: 384px; position: absolute" text="为空表示无变更"/>
+        <ui:textField binding="#{wgDocInputF$SBInput.textField_snBlueprint}" id="textField_snBlueprint" style="left: 96px; top: 288px; position: absolute; width: 250px"/>
+        <ui:textField binding="#{wgDocInputF$SBInput.textField_partName}" id="textField_partName" style="left: 96px; top: 144px; position: absolute; width: 250px"/>
+        <ui:textField binding="#{wgDocInputF$SBInput.textField_categoryString}" id="textField_categoryString" rendered="false" style="left: 384px; top: 144px; position: absolute; width: 250px"/>
+        <ui:textArea binding="#{wgDocInputF$SBInput.textArea_memo}" id="textArea_memo" style="height: 50px; left: 0px; top: 456px; position: absolute; width: 350px"/>
+        <ui:textField binding="#{wgDocInputF$SBInput.textField_link}" id="textField_link" style="left: 96px; top: 384px; position: absolute; width: 250px"/>
+        <ui:button action="#{wgDocInputF$SBInput.button_submit_action}" binding="#{wgDocInputF$SBInput.button_submit}" id="button_submit"
+            style="height: 32px; left: 167px; top: 528px; position: absolute; width: 80px" text="确定"/>
+        <ui:label binding="#{wgDocInputF$SBInput.label2}" id="label2" labelLevel="1" style="left: 72px; top: 0px; position: absolute" text="设备图档输入"/>
+        <ui:label binding="#{wgDocInputF$SBInput.label3}" for="fileUpload" id="label3" style="left: 0px; top: 336px; position: absolute" text="选择上传文件："/>
+        <ui:label binding="#{wgDocInputF$SBInput.label4}" id="label4" style="left: 0px; top: 96px; position: absolute" text="设备型号："/>
+        <ui:label binding="#{wgDocInputF$SBInput.label5}" id="label5" style="left: 0px; top: 144px; position: absolute" text="部件名称："/>
+        <ui:label binding="#{wgDocInputF$SBInput.label6}" id="label6" style="left: 0px; top: 192px; position: absolute" text="类目编号："/>
+        <ui:label binding="#{wgDocInputF$SBInput.label7}" id="label7" style="left: 0px; top: 288px; position: absolute" text="图纸编号："/>
+        <ui:label binding="#{wgDocInputF$SBInput.label8}" id="label8" style="left: 0px; top: 384px; position: absolute" text="变更编号："/>
+        <ui:label binding="#{wgDocInputF$SBInput.label9}" id="label9" style="left: 0px; top: 432px; position: absolute" text="备注信息："/>
+        <ui:dropDown binding="#{wgDocInputF$SBInput.dropDown_nm}" id="dropDown_nm" items="#{wgDocInputF$SBInput.dropDown_nmDefaultOptions.options}" style="left: 96px; top: 192px; position: absolute; width: 250px"/>
+        <ui:label binding="#{wgDocInputF$SBInput.label10}" id="label10" style="left: 0px; top: 240px; position: absolute" text="图档名称："/>
+        <ui:textField binding="#{wgDocInputF$SBInput.textField_tzmc}" id="textField_tzmc" style="left: 96px; top: 240px; position: absolute; width: 248px"/>
+        <ui:button action="#{wgDocInputF$SBInput.button1_action}" binding="#{wgDocInputF$SBInput.button1}" id="button1"
+            style="height: 32px; left: 263px; top: 528px; position: absolute; width: 80px" text="退出"/>
+        <ui:messageGroup binding="#{wgDocInputF$SBInput.messageGroup1}" id="messageGroup1" style="position: absolute; left: 432px; top: 136px"/>
+        <ui:label binding="#{wgDocInputF$SBInput.label11}" id="label11" style="left: 0px; top: 48px; position: absolute" text="设备名称："/>
+        <ui:textField binding="#{wgDocInputF$SBInput.textField_sbAliasName}" id="textField_sbAliasName" style="left: 96px; top: 48px; position: absolute; width: 250px"/>
+    </f:subview>
+</div>

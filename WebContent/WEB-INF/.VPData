@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document version="1.0">
+    <Node id="AccountOP/ChangeAccountPassword.jsp" x="104" y="488"/>
+    <Node id="AccountOP/CreateUserAccount.jsp" x="624" y="520"/>
+    <Node id="AccountOP/ModifyUserAccount.jsp" x="2096" y="512"/>
+    <Node id="AccountOP/ShowAllAccount.jsp" x="2096" y="384"/>
+    <Node id="Login.jsp" x="616" y="280"/>
+    <Node id="Message/DBConnectionError.jsp" x="1960" y="344"/>
+    <Node id="Message/DeleteAccountNotAllowed.jsp" x="1952" y="96"/>
+    <Node id="Message/DeleteRoleFailure.jsp" x="1792" y="208"/>
+    <Node id="Message/DeleteRoleSuccess.jsp" x="1544" y="552"/>
+    <Node id="Message/Failure.jsp" x="1952" y="272"/>
+    <Node id="Message/ModifyNotAllowed.jsp" x="1568" y="120"/>
+    <Node id="Message/NoPopedom.jsp" x="1952" y="208"/>
+    <Node id="Message/Success.jsp" x="1800" y="64"/>
+    <Node id="Message/Welcome.jsp" x="2288" y="224"/>
+    <Node id="RoleOP/CreateRole.jsp" x="1944" y="96"/>
+    <Node id="RoleOP/ModifyRole.jsp" x="1848" y="528"/>
+    <Node id="RoleOP/ShowAllRole.jsp" x="1544" y="440"/>
+    <Node id="category/AddLevelOne.jsp" x="6344" y="432"/>
+    <Node id="category/AddLevelTwo.jsp" x="6344" y="608"/>
+    <Node id="category/EditLevelOne.jsp" x="6344" y="304"/>
+    <Node id="category/EditLevelTwo.jsp" x="6344" y="216"/>
+    <Node id="category/ShowLevelOne.jsp" x="6136" y="504"/>
+    <Node id="category/ShowLevelTwo.jsp" x="6136" y="424"/>
+    <Node id="main.jsp" x="656" y="96"/>
+    <Node id="reports/SelectPeriod.jsp" x="5560" y="104"/>
+    <Node id="search/preview.jsp" x="5456" y="296"/>
+    <Node id="search/searchCondition.jsp" x="5752" y="264"/>
+    <Node id="search/searchJJ.jsp" x="5680" y="440"/>
+    <Node id="search/searchSB.jsp" x="5832" y="440"/>
+    <Node id="wgDocInput/JJEdit.jsp" x="1120" y="520"/>
+    <Node id="wgDocInput/JJInput.jsp" x="920" y="240"/>
+    <Node id="wgDocInput/JJInspect.jsp" x="1224" y="168"/>
+    <Node id="wgDocInput/JJInspectPreview.jsp" x="1224" y="264"/>
+    <Node id="wgDocInput/JJInspectShowAll.jsp" x="1080" y="400"/>
+    <Node id="wgDocInput/SBEdit.jsp" x="400" y="776"/>
+    <Node id="wgDocInput/SBInput.jsp" x="104" y="568"/>
+    <Node id="wgDocInput/SBInspect.jsp" x="104" y="848"/>
+    <Node id="wgDocInput/SBInspectPreview.jsp" x="104" y="664"/>
+    <Node id="wgDocInput/SBInspectShowAll.jsp" x="104" y="760"/>
+    <Node id="错误" x="3248" y="96"/>
+</document>
